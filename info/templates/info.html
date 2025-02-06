@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block activeURL %}active{% endblock %}
+{% block unactiveURL %}unactive{% endblock %}
+
+{% block contant %}
+
+<div class='allInfoMain'>
+{% for info in infos %}
+
+    <div class='cart cartColorGray'>   
+            <img src="{{info.image.url}}" alt="" class='cartImage cartColorGray' alt='Profile pic'>
+        <div class='cartInformation cartColorGray'>
+            <span class='cartName cartColorGray'>{{info.name}}</span>
+            <span class='carInfo cartColorGray'>{{info.dob}}</span>
+            <span class='carInfo cartColorGray'>{{info.phone}}</span>
+            <span class='carInfo cartColorGray'>{{info.occuppation}}</span>
+            <a href={% url "InfoDetails" info.id %} class='carInfo cartColorGray' style='color:rgb(118, 113, 113);'>more...</a>
+        </div>
+    </div>
+    
+{% endfor %}
+</div>  
+
+{% endblock %}

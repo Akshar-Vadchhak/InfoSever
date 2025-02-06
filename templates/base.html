@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %}Document{% endblock %}</title>
+    <link rel="stylesheet" href={% static "sytle.css" %}>
+</head>
+<body>
+    {% comment %} home page nav bar  {% endcomment %}
+    <nav>
+        <div class='navbar'>
+            Info saver
+        </div>
+    </nav>
+    
+    <div>
+        <div class='links'>
+            <a href={% url "info" %} class={% block activeURL %}{% endblock %}>Members</a>
+            <a href={% url "addinfo" %} class={% block unactiveURL %}{% endblock %}>Add me</a>
+        </div>
+    </div>
+
+    {% block contant %}
+    
+    {% endblock %}
+
+    <footer>
+        <div class='footer'>
+            &copy; Created By  Akshar Vadchhak
+        </div>
+    </footer> 
+
+</body>
+</html>

@@ -1,0 +1,513 @@
+/* font import from google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Baloo+2:wght@400..800&family=Baloo+Bhai+2:wght@400..800&family=Gupter:wght@400;500;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Markazi+Text:wght@400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tiro+Devanagari+Hindi:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* this is for globle general CSS  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", serif;
+    /* font-weight: 400; */
+    /* font-style: normal; */
+    background: #161617;
+    color: #f0e8e8;
+}
+
+/* this class root template's base.html */
+/* navbar  */
+.navbar {
+    background: #f0e8e8;
+    color: #161617;
+    height: 3rem;
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 900;
+    border: none;
+    border-radius: .3rem;
+}
+
+/* this class root template's base.html */
+/* footer  */
+.footer {
+    background: #f0e8e8;
+    color: #161617;
+    height: 3rem;
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 900;
+    border: none;
+    border-radius: .3rem;
+}
+
+/* this class root template's base.html */
+/* CSS for Navbar links  */
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem ;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+
+/* this class root template's base.html */
+/* CSS for A tag  */
+a{
+    text-decoration: none;
+}
+
+
+/* this class root template's base.html */
+/* CSS for navigat button  */
+/* this is for active  */
+.active{
+    color: #161617;
+    background: #f0e8e8;
+    padding: 5px;
+    border: none;
+    border-radius: .3rem;
+}
+
+/* this is for unactive  */
+.unactive{
+    color: #afadb7;
+}
+
+/* this is for unactive hover */
+.unactive:hover{
+    color: #f0e8e8;
+}
+
+/* thi is for devlopment only */
+h1{
+    text-align: center;
+}
+
+/* this class info app's template's info.html */
+/* main div of carts  */
+.allInfoMain{
+    margin: 5rem;
+    height: auto;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: none;
+    border-radius: .5rem;
+}
+
+/* this class info app's template's info.html */
+/* main div of cart  */
+.cart{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22rem;
+    gap: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+    background-color:  #1a1c1c;
+}
+
+/* this class info app's template's info.html */
+/* main div of cart hover  */
+.cart:hover{
+    background-color:  #1c1e1e;
+}
+
+/* this class info app's template's info.html */
+/* main div of cart background color  */
+.cartColorGray{
+    background-color:  #1a1c1c;
+}
+
+/* this class info app's template's info.html */
+/* main div of cart image  */
+.cartImage{
+    max-width: 10rem;
+    max-height: 17rem;
+    border: none;
+    border-radius: .7rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .cartImage{
+        max-width: 8rem;
+        max-height: 15rem;
+    }
+ }
+
+/* this class info app's template's info.html */
+/* main div of cart information  */
+.cartInformation{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: .8rem;
+    gap: 1rem;
+    border-radius: .7rem;
+}
+
+/* this class info app's template's info.html */
+/* main div of cart information's main name  */
+.cartName{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .cartName{
+        font-size: 1.7rem;
+    }
+ }
+
+/* this class info app's template's info.html */
+/* main div of cart information's all info  */
+.carInfo{
+    font-weight: 400;
+}
+
+
+
+
+/* this class info app's template's infoDetails.html */
+.allInfoDetailsMainBody{
+    margin: 5rem;
+    height: auto;
+    padding: 10px;
+    margin-top: 3rem;
+    border-radius: .7rem;
+    background-color:  #1a1c1c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .allInfoDetailsMainBody{
+        flex-direction: column;
+        margin: 2rem;
+        margin-top: 1rem;
+        margin: 2rem;
+    }
+ }
+
+.detailsMainName{
+    text-align:end;
+    margin: 1rem;
+    margin-top: .4rem;
+    font-size: 4.5rem;
+    background-color:  #1a1c1c;
+    padding-right: 3rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .detailsMainName{
+        text-align:center;
+        font-size: 1.5rem;
+        padding-right: 0rem;
+    }
+ }
+
+.allInfoMainDetails{
+    display: flex;
+    gap: 4rem;
+    padding: 1.5rem;
+    padding-left: 5rem;
+    background-color:  #1a1c1c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .allInfoMainDetails{
+        flex-direction: column;
+        padding-left: 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: .9rem;
+        padding-left: 0rem;
+    }
+ }
+
+.detailsImg{
+    max-width: 25rem;
+    max-height: 38rem;
+    border-radius: .7rem;
+    background-color:  #1a1c1c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .detailsImg{
+        max-width: 14rem;
+        max-height: 19rem;
+    }
+ }
+
+.infoAllDetails{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 1.2rem;
+    background-color:  #1a1c1c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .infoAllDetails{
+        font-size: 1rem;
+        gap: 0rem;
+    }
+ }
+
+.oneDetailInfo{
+    background-color:  #1a1c1c;
+}
+
+.infoDetailsLable{
+    font-size: .9rem;
+    margin: 1rem;
+    background-color:  #1a1c1c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .infoDetailsLable{
+        font-size: .8rem;
+        margin: .9rem; 
+        margin-left: 5px;
+    }
+}
+
+.infoDetailsData{
+    margin: 1rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    padding: 7px;
+    padding-left: 25px;
+    border-radius: 5px;
+    width: 100%;
+    background-color:  #262727;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .infoDetailsData{
+        word-wrap: break-word; /* Break long words */
+        margin-left: 0rem;
+        margin-left: 0rem;
+        padding-left: 7px;
+    }
+ }
+
+.infoDetailsData:hover{
+    color: #161617;
+    background-color:#f0e8e8 ;
+}
+
+.Description{
+    padding: 1rem;
+    background-color:  #1a1c1c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .Description{
+        padding: .1rem;
+    }
+ }
+
+.descriptionBox {
+    margin: 1rem 1rem 1rem 3rem;
+    padding: 10px 25px;
+    border-radius: 5px;
+    min-width: 300px;
+    min-height: 150px;
+    max-width: 100%;
+    background-color:  #262727;
+    font-size: 1rem;
+    /* Fix overflow issue */
+    overflow: auto;
+    word-wrap: break-word; /* Break long words */
+    white-space: normal; /* Allow text to wrap */
+    display: flex;
+    align-items: flex-start; /* Align content properly */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .descriptionBox{
+        min-width: 40px;
+        min-height: 20px;
+        word-wrap: break-word; /* Break long words */
+        margin-left: 0rem;
+        margin-left: 0rem;
+        padding-left: 7px;
+    }
+ }
+
+.descriptionBox:hover{
+    color: #161617;
+    background-color:#f0e8e8 ;
+}
+
+.detailsAddDate{
+    background-color:  #1a1c1c;
+    color: rgb(118, 113, 113);
+    font-weight: 600;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+/* this class info app's template's addInfo.html */
+.form{
+    margin: 5rem;
+    height: auto;
+    padding: 10px;
+    margin-top: 3rem;
+    border-radius: .7rem;
+    background-color:  #1a1c1c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .form{
+        margin: 1rem;
+    }
+}
+
+.formTitle{
+    margin: .5rem;
+    background-color:  #1a1c1c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .formTitle{
+        margin: .5rem;
+    }
+}
+
+.mainForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+    background-color:  #1a1c1c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .mainForm{
+        margin: 1rem;
+    }
+}
+
+.mainFormInput{
+    display: flex;
+    flex-direction: column;
+    background-color:  #1a1c1c;
+}
+
+.formLable{
+    font-size: 1.2rem;
+    margin: 1rem;
+    margin-bottom: .5rem;
+    background-color:  #1a1c1c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .formLable{
+        margin: .1rem;
+        font-size: 1rem;
+    }
+}
+
+.formInput{
+    margin: 1rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    padding: 7px;
+    padding-left: 25px;
+    width: 90%;
+    padding: 1rem;
+    font-size: 1rem;
+    background: #262727;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .formInput{
+        margin: 1rem;
+        margin-left: 0rem;
+    }
+}
+
+.formDescriptionInput{
+    min-width: 300px;
+    min-height: 150px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .formDescriptionInput{
+        min-width: 30px;
+        min-height: 15px;
+    }
+}
+
+.formAddressInput{
+    min-width: 300px;
+    min-height: 100px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .formAddressInput{
+        min-width: 30px;
+        min-height: 15px;
+    }
+}
+
+.btnClass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #1a1c1c;
+}
+
+.btnFrom{
+    text-align: center;
+    margin: 1rem;
+    margin-top: 1.7rem;
+    padding: 13px 70px 13px 70px;
+    font-size: 1.3rem;
+    font-weight: 900;
+    border: none;
+    border-radius: .5rem;
+    background: #262727;
+}
+
+.btnFrom:hover{
+    background: #f0e8e8;
+    color: #262727;;
+}
+
+.bgRed{
+    background: #ff0000;
+}

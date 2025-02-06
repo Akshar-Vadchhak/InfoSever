@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Add Info{% endblock %}
+
+{% block activeURL %}unactive{% endblock %}
+{% block unactiveURL %}active{% endblock %}
+
+{% block contant %}
+
+<div class='form'>
+    <h1 class='formTitle'>My Information</h1>
+
+    <form method='post' action='/addinfo' class='mainForm' enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class='mainFormInput'>
+            <label for="name" class='formLable'>Name :</label>
+            <input type="text" id="name" name="name" required class='formInput'>
+    
+            <label for="image" class='formLable'>Upload Image :</label>
+            <input type="file" id="image" name="image" accept="image/*" class='formInput'>
+    
+            <label for="dob" class='formLable'>Date of Birth :</label>
+            <input type="date" id="dob" name="dob" required class='formInput'>
+    
+            <label for="phone" class='formLable'>Phone Number :</label>
+            <input type="tel" id="phone" name="phone" required class='formInput'>
+    
+            <label for="address" class='formLable'>Address :</label>
+            <textarea id="address" name="address" rows="2" required class='formInput formAddressInput'></textarea >
+    
+            <label for="native_place" class='formLable'>Native Place :</label>
+            <input type="text" id="native_place" name="native_place" required class='formInput'>
+    
+            <label for="occupation" class='formLable'>Occupation :</label>
+            <input type="text" id="occupation" name="occupation" required class='formInput'>
+    
+            <label for="study" class='formLable'>Field of Study :</label>
+            <input type="text" id="study" name="study" required class='formInput'>
+    
+            <label for="school" class='formLable'>School :</label>
+            <input type="text" id="school" name="school" required class='formInput'>
+    
+            <label for="university" class='formLable'>University :</label>
+            <input type="text" id="university" name="university" required class='formInput'>
+    
+            <label for="degree" class='formLable'>Degree :</label>
+            <input type="text" id="degree" name="degree" required class='formInput'>
+    
+            <label for="description" class='formLable'>Description :</label>
+            <textarea id="description" name="description" rows="4" required class='formInput formDescriptionInput'></textarea>
+             
+            <div class='btnClass'>
+                <button class='btnFrom'>Add Me</button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}Details{% endblock %}
+
+{% block activeURL %}unactive{% endblock %}
+{% block unactiveURL %}unactive{% endblock %}
+
+{% block contant %}
+
+<div class='allInfoDetailsMainBody '>
+    <h1 class="detailsMainName">{{info.name}}</h1>
+    <div class='allInfoMainDetails'>
+        <img src="{{info.image.url}}" alt="Person image" class='detailsImg'>
+        <div class='infoAllDetails'>
+            <div class='oneDetailInfo'>
+                <p class='infoDetailsLable'>Date of Birth :</p>
+                <div class='infoDetailsData'>{{info.dob}}</div>
+            </div>
+            <div class='oneDetailInfo'>
+                <p class='infoDetailsLable'>Phone :</p>
+                <div class='infoDetailsData'>{{info.phone}}</div>
+            </div>
+            <div class='oneDetailInfo'>
+                <p class='infoDetailsLable'>Native Place :</p>
+                <div class='infoDetailsData'>{{info.NativePlace}}</div>
+            </div>
+            <div class='oneDetailInfo'>
+                <p class='infoDetailsLable'>Occupation :</p>
+                <div class='infoDetailsData'>{{info.occuppation}}</div>
+            </div>
+            <div class='oneDetailInfo'>
+                <p class='infoDetailsLable'>Study :</p>
+                <div class='infoDetailsData'>{{info.study}}</div>
+            </div>
+            <div class='oneDetailInfo'>
+                <p class='infoDetailsLable'>School :</p>
+                <div class='infoDetailsData'>{{info.school}}</div>
+            </div>
+            <div class='oneDetailInfo'>
+                <p class='infoDetailsLable'>University :</p>
+                <div class='infoDetailsData'>{{info.university}}</div>
+            </div>
+            <div class='oneDetailInfo'>
+                <p class='infoDetailsLable'>Graduation :</p>
+                <div class='infoDetailsData'>{{info.degree}}</div>
+            </div>
+            <div class='oneDetailInfo'>
+                <p class='infoDetailsLable'>Adress :</p>
+                <div class='infoDetailsData'>{{info.adress}}</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="Description">
+        <div class='oneDetailInfo'>
+            <p class='infoDetailsLable'>Description</p>
+            <div class='descriptionBox'>{{info.description}}</div>
+        </div>
+
+        <h6 class='detailsAddDate'>{{info.addDate}}</h6> 
+    </div>
+</div>
+
+{% endblock %}
